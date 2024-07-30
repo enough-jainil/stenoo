@@ -1,95 +1,111 @@
-# Steno :loop:
+# Stenoo :loop:
 
-[![GitHub Super-Linter](https://github.com/aloner-pro/Steno/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![GitHub Super-Linter](https://github.com/enough-jainil/stenoo/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
-## Ultimate Steganography software:superhero:
+## Ultimate Steganography Software :superhero:
 
-The do all steganography application.:grin:<br>
-**Formats Supported-**
+Stenoo is the do-all steganography application, designed to hide your messages rather than just encrypting them. :grin:
+
+**Formats Supported:**
 
 - Images
 - Audio
 - Text
-- ~~Video~~ _To be supported in future version_
+- ~~Video~~ _To be supported in future versions_
 
->This is an important application especially in today's world.<br>
-> We need to hide the messages rather than only encrypting them.
+> In today's world, hiding messages is as crucial as encrypting them. Stenoo provides a comprehensive solution for your steganography needs.
 
 ## Features
 
 - Hide your private messages in images, audio & text files.
-- Forgot password in case you forget. <br>
-(Click on the _3 dots_ in main window to know more)
-- Access info about any button just by hovering on it.
+- Password protection for enhanced security.
+- Forgot password recovery feature.
+- User-friendly interface with helpful tooltips.
+- Cross-platform compatibility (Windows, macOS, Linux).
 
-![homescreen](https://github.com/aloner-pro/Steno/blob/master/images/img.png?raw=true)
+![homescreen](https://github.com/enough-jainil/stenoo/blob/master/images/img.png?raw=true)
 
-Using those those _3 dots_ present in topright of the above window, user can create an account in case they forget the password for their repective hidden messages in files.
+## Installation
 
-## Other Notes
-
-All modules are standard modules of **batteries included** python. Then use the `main.py`.
-**Having `Cascadia Code` font makes the GUI look best.**
-Rest the GUI is quite explanatory so hope you don't have any problem using this.
-In audio steganography only `.wav` files are supported presently. In images are formats are supported.
-
-## Roadmap
-
-- Enabling encryption of data
-
-- Adding video support
-
-## Installation Instruction
-
-```
+```bash
 # Your global Python installation needs to have pipenv
 pip install pipenv
 
 # Clone the repo
-git clone https://github.com/aloner-pro/Steno
+git clone https://github.com/enough-jainil/stenoo.git
 
 # Change directories into the project
-cd Steno
+cd stenoo
 
-# [developer only] If you are developer you need to install dependencies for dev
-pipenv install --dev
-
-# If you're not a developer just install required dependencies like this
+# Install dependencies
 pipenv install
 
-# Activate the Pipenv shell (aka tell your terminal/whatever to use dependencies from the env in this project)
+# Activate the Pipenv shell
 pipenv shell
 
 # Start the program
-python -m main.py
+python main.py
 ```
 
-## Steganography is not Cryptography ! :confused:
+## Usage
 
-If you are getting confused between _Steganography_ & _Cryptography_. Then see this -
+1. Launch the application by running `python main.py`
+2. Choose the type of steganography (Text, Image, or Audio) from the main menu.
+3. For encoding:
+   - Select the carrier file
+   - Enter the message or select a file to hide
+   - Set a password
+   - Choose the output location
+   - Click "Encode" or "Embed"
+4. For decoding:
+   - Select the steganographic file
+   - Enter the password
+   - Click "Decode" or "Extract"
 
-#### Cryptography
+For detailed usage instructions, please refer to the [User Manual](docs/USER_MANUAL.md).
 
-**If** `you = wms` **then** `Qcaapgrw gq gknmprylr` **= ?**<br>
-_Can you guess the answer?_<br>
-Here we have `key = -2` i.e. if we go 2 alphabets behind `y` you get
-`w` and similarly if you go 2 alphabets behind `o` we get `m` and similarly 2 alphabets behind `u` gives us `s`. Therefore `you = wms`. <br>
-So now you may have got the answer which is `Security is important`.
-> Note: The cryptography algorithms are much advanced now.
+## Development
 
-#### Steganography
+For those interested in contributing to Stenoo:
 
-So now that you know what is cryptography so lets know what is _Steganography_.<br>
-**If** `____=____` **then** `______=______` **?**<br>
-_Confused ?_<br>
-Here you won't be able to even sense the presence of data. Leave alone knowing what
-is the data. That's why it is called hiding data in plain sight. There are some applications which
-may detect the presence of hidden data. CIA obviously has it <emoji><br>
-Generally at professional level the data hidden is encrypted first. So _steganography_ and _cryptography_ are not
-mutually exclusive to each other.
->Knowledge fact: Jeff Bezos's mobile was hacked by hiding malicious code in a media
->file which on getting downloaded sent the host device's control to the hacker.
+```bash
+# Install dev dependencies
+pipenv install --dev
+
+# Run tests
+pytest
+
+# Check code style
+flake8
+```
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## Roadmap
+
+- [ ] Implement video steganography support
+- [ ] Enhance encryption for improved data security
+- [ ] Develop web and mobile versions
+- [ ] Implement advanced steganography techniques
+
+## Why Steganography?
+
+Steganography is not just about hiding data; it's about hiding the very existence of the data. While encryption makes data unreadable, steganography makes it invisible.
+
+Example:
+- Encrypted: `Qcaapgrw gq gknmprylr` (Easily detectable as encrypted)
+- Steganographic: Your message is hidden within an ordinary-looking file, leaving no trace of its existence.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [SNOW](http://www.darkside.com.au/snow/) for text steganography
+- OpenCV community for image processing capabilities
+- All contributors who have helped shape Stenoo
+
+---
+
+Remember: Stenoo is a tool for privacy, not secrecy. Use responsibly and ethically.
