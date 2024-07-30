@@ -1,6 +1,5 @@
 # Stenoo :loop:
 
-[![GitHub Super-Linter](https://github.com/enough-jainil/stenoo/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 ## Ultimate Steganography Software :superhero:
 
@@ -23,7 +22,6 @@ Stenoo is the do-all steganography application, designed to hide your messages r
 - User-friendly interface with helpful tooltips.
 - Cross-platform compatibility (Windows, macOS, Linux).
 
-![homescreen](https://github.com/enough-jainil/stenoo/blob/master/images/img.png?raw=true)
 
 ## Installation
 
