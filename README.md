@@ -94,10 +94,6 @@ Example:
 - Encrypted: `Qcaapgrw gq gknmprylr` (Easily detectable as encrypted)
 - Steganographic: Your message is hidden within an ordinary-looking file, leaving no trace of its existence.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - [SNOW](http://www.darkside.com.au/snow/) for text steganography
